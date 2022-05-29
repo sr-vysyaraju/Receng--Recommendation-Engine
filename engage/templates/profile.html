@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Select preferences</title>
+  </head>
+  <body class="bg-dark text-light">
+    <h1 style="font-family: 'Oswald'; text-align: center; margin-top: 50px;" class="text-warning">Receng</h1>
+    <p style="text-align: center; font-size: 22px;">Select ypur preferences</p>
+    <div class="container align-items-center border border-light rounded shadow">
+        <form class="form-container align-items-center p-3" method="POST" action="profile">{% csrf_token %}
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 offset-2 col-form-label">Select your interests:</label>
+                <div style="padding-top: 8px" class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre1" value="0">
+                        <label class="form-check-label" for="genre1">Action</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre2" value="1">
+                        <label class="form-check-label" for="genre2">Comedy</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre3" value="2">
+                        <label class="form-check-label" for="genre3">Drama</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre4" value="3">
+                        <label class="form-check-label" for="genre4">Fantasy</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre5" value="4">
+                        <label class="form-check-label" for="genre5">Romance</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre6" value="5">
+                        <label class="form-check-label" for="genre6">Science fiction</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre7" value="6">
+                        <label class="form-check-label" for="genre7">Horror</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="genreOptions" id="genre8" value="7">
+                        <label class="form-check-label" for="genre8">Thriller</label>
+                      </div>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-sm-2 offset-2 col-form-label">Preferred languages:</label>
+                <div style="padding-top: 8px" class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="langOptions" id="lang1" value="Telugu">
+                        <label class="form-check-label" for="lang1">Telugu</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="langOptions" id="lang2" value="Hindi">
+                        <label class="form-check-label" for="lang2">Hindi</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="langOptions" id="lang3" value="English">
+                        <label class="form-check-label" for="lang3">English</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row justify-content-right">
+                <div class="col-sm-1 offset-sm-8">
+                  <button type="submit" class="btn btn-warning">Done</button>
+                </div>
+              </div>  
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
